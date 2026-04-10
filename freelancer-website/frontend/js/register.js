@@ -4,7 +4,7 @@ async function register() {
   const password = document.getElementById("password").value;
   const role = document.getElementById("role").value;
 
-  const res = await fetch("http://localhost:5000/api/auth/register", {
+  const res = await fetch("https://freelancer-y87s.onrender.com/api/auth/register", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({ name, email, password, role })
