@@ -5,7 +5,7 @@ async function postJob() {
 
   const token = localStorage.getItem("token");
 
-  const res = await fetch("http://localhost:5000/api/jobs", {
+  const res = await fetch("https://freelancer-y87s.onrender.com/api/jobs", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
