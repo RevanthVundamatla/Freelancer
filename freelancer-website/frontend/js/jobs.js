@@ -1,5 +1,5 @@
 async function loadJobs() {
-  const res = await fetch("http://localhost:5000/api/jobs");
+  const res = await fetch("https://freelancer-y87s.onrender.com/api/jobs");
   const jobs = await res.json();
 
   const container = document.getElementById("jobs");
